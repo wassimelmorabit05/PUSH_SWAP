@@ -40,14 +40,14 @@ char		**check_args(int ac, char **av);
 int			check_is_num(char **args);
 char		**ft_split(char const *s, char c);
 char		*ft_strjoin(char const *s1, char const *s2);
-int			ft_atoi_pushswap(char *str, int *error);
+int			ft_atoi(char *str, int *er);
 size_t		ft_strlen(const char *s);
 char		*ft_strdup(const char *s1);
 
 // stack_utils.c
-t_ps_list	*create_node(int va);
+t_ps_list	*creat_node(int va);
 void		add_back(t_ps_list **head, t_ps_list *new);
-int			has_duplicates(t_ps_list *node, int nb);
+int			is_duplicate(t_ps_list *node, int nb);
 int			list_size(t_ps_list *node);
 void		free_list(t_ps_list **head);
 
