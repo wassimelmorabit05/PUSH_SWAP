@@ -46,9 +46,9 @@ char		*ft_strdup(const char *s1);
 
 // stack_utils.c
 t_ps_list	*creat_node(int va);
-void		add_back(t_ps_list **head, t_ps_list *new);
+void		ft_add_back(t_ps_list **head, t_ps_list *new);
 int			is_duplicate(t_ps_list *node, int nb);
-int			list_size(t_ps_list *node);
+int			ft_list_size(t_ps_list *node);
 void		free_list(t_ps_list **head);
 
 // utils.c
