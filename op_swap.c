@@ -5,7 +5,7 @@ void    swap(t_ps_list **head)
     t_ps_list   *first;
     t_ps_list   *second;
 
-    if (!head || !(*head) || (*head)->next == NULL)
+    if (!head || !(*head) || !(*head)->next)
         return ;
     first = *head;
     second = (*head)->next;

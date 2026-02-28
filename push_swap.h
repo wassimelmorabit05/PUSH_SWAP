@@ -45,10 +45,10 @@ size_t		ft_strlen(const char *s);
 char		*ft_strdup(const char *s1);
 
 // stack_utils.c
-t_ps_list	*creat_node(int va);
+t_ps_list	*ft_create_node(int nbr);
 void		ft_add_back(t_ps_list **head, t_ps_list *new);
-int			is_duplicate(t_ps_list *node, int nb);
-int			ft_list_size(t_ps_list *node);
+int			is_duplicate(t_ps_list *node, int nbr);
+int			ft_list_size(t_ps_list *list);
 void		free_list(t_ps_list **head);
 
 // utils.c
@@ -59,8 +59,8 @@ void		free_split(char **args);
 void		getindex(t_ps_list **stack);
 t_ps_list	*find_max(t_ps_list *stack);
 void		sort_three(t_ps_list **stack);
-void		sort_four(t_ps_list **stack_a, t_ps_list **stack_b);
-void		sort_five(t_ps_list **stack_a, t_ps_list **stack_b);
-void		sort_big(t_ps_list **stack_a, t_ps_list **stack_b);
+void		sort_four(t_ps_list **a, t_ps_list **b);
+void		sort_five(t_ps_list **a, t_ps_list **b);
+void		sort_big(t_ps_list **a, t_ps_list **b);
 
 #endif
