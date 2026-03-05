@@ -1,12 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oel-mora <oel-mora@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/03/05 13:57:10 by oel-mora          #+#    #+#             */
+/*   Updated: 2026/03/05 14:06:40 by oel-mora         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 t_ps_list	*create_stack(char **args)
 {
 	t_ps_list	*head;
 	t_ps_list	*new_node;
-	long nbr;
-	int er;
-	int i ;
+	long		nbr;
+	int			er;
+	int			i;
 
 	head = NULL;
 	i = 0;
@@ -26,32 +38,32 @@ t_ps_list	*create_stack(char **args)
 	}
 	return (head);
 }
+
 void	sorting(t_ps_list **a, t_ps_list **b)
 {
 	if (!a || !*a)
 		return ;
-
 	getindex(a);
-
 	if (ft_list_size(*a) == 2)
 	{
 		if ((*a)->value > (*a)->next->value)
 			sa(a);
 	}
 	else if (ft_list_size(*a) == 3)
-        sort_three(a);
+		sort_three(a);
 	else if (ft_list_size(*a) == 4)
-        sort_four(a, b);
-    else if (ft_list_size(*a) == 5)
-        sort_five(a, b);
-    else
-        sort_big(a, b);
+		sort_four(a, b);
+	else if (ft_list_size(*a) == 5)
+		sort_five(a, b);
+	else
+		sort_big(a, b);
 }
+
 int	main(int ac, char **av)
 {
 	char		**split_args;
-	t_ps_list *a;
-	t_ps_list *b;
+	t_ps_list	*a;
+	t_ps_list	*b;
 
 	a = NULL;
 	if (ac < 2)

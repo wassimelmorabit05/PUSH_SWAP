@@ -8,9 +8,9 @@ RM = rm -f
 SRCS = main.c \
        ft_atoi.c \
        ft_split.c \
-	   ft_strdup.c \
-	   ft_strjoin.c \
-	   ft_strlen.c \
+	ft_strdup.c \
+	ft_strjoin.c \
+	ft_strlen.c \
        op_push.c \
        op_rotate.c \
        op_rrotate.c \
@@ -19,7 +19,8 @@ SRCS = main.c \
        sort_big.c \
        stack_utils.c \
        utils.c \
-       validate_args.c 
+       validate_args.c \
+       sort_utils.c
 
 
 OBJS = $(SRCS:.c=.o)

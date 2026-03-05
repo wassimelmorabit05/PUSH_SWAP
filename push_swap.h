@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oel-mora <oel-mora@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/03/05 13:57:59 by oel-mora          #+#    #+#             */
+/*   Updated: 2026/03/05 14:40:39 by oel-mora         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
@@ -55,9 +67,11 @@ void		free_list(t_ps_list **head);
 int			is_sorted(t_ps_list *node);
 void		free_split(char **args);
 
-// sort_one.c
+// sort_utils.c
 void		getindex(t_ps_list **stack);
 t_ps_list	*find_max(t_ps_list *stack);
+int			find_min(t_ps_list *stack);
+// sort1.c
 void		sort_three(t_ps_list **stack);
 void		sort_four(t_ps_list **a, t_ps_list **b);
 void		sort_five(t_ps_list **a, t_ps_list **b);

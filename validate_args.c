@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   validate_args.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oel-mora <oel-mora@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/03/05 13:58:26 by oel-mora          #+#    #+#             */
+/*   Updated: 2026/03/05 15:12:49 by oel-mora         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 int	is_empty(char *s)
 {
-	int	i = 0;
+	int	i;
 
+	i = 0;
 	if (!s)
 		return (1);
 	while (s[i])
@@ -56,7 +69,6 @@ static char	*process(char *str, char *arg)
 		if (!tmp)
 			return (free_split(split_args), NULL);
 		str = tmp;
-
 		tmp = ft_strjoin(str, " ");
 		free(str);
 		if (!tmp)
