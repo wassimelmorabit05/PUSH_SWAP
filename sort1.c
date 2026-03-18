@@ -6,7 +6,7 @@
 /*   By: oel-mora <oel-mora@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 13:58:11 by oel-mora          #+#    #+#             */
-/*   Updated: 2026/03/05 14:43:17 by oel-mora         ###   ########.fr       */
+/*   Updated: 2026/03/18 10:31:54 by oel-mora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ void	sort_five(t_ps_list **a, t_ps_list **b)
 {
 	int	pos;
 	int	size;
-	int	rot;
 
 	pos = find_min(*a);
 	size = ft_list_size(*a);
@@ -59,8 +58,7 @@ void	sort_five(t_ps_list **a, t_ps_list **b)
 	}
 	else
 	{
-		rot = size - pos;
-		while (rot-- > 0)
+		while (pos++ < size)
 			rra(a);
 	}
 	pb(a, b);

@@ -6,7 +6,7 @@
 /*   By: oel-mora <oel-mora@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 13:57:10 by oel-mora          #+#    #+#             */
-/*   Updated: 2026/03/05 14:06:40 by oel-mora         ###   ########.fr       */
+/*   Updated: 2026/03/17 14:11:27 by oel-mora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,7 @@ void	sorting(t_ps_list **a, t_ps_list **b)
 		return ;
 	getindex(a);
 	if (ft_list_size(*a) == 2)
-	{
-		if ((*a)->value > (*a)->next->value)
-			sa(a);
-	}
+		sa(a);
 	else if (ft_list_size(*a) == 3)
 		sort_three(a);
 	else if (ft_list_size(*a) == 4)
